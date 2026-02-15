@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nike Air Max Plus TN | Limited Drop UA</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#FF3B30', /* Основний колір (червоний/помаранчевий) */
+                        dark: '#0a0a0a',
+                        card: '#121212'
+                    },
+                    fontFamily: {
+                        display: ['Anton', 'sans-serif'],
+                        body: ['Manrope', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0a0a0a; color: white; font-family: 'Manrope', sans-serif; -webkit-font-smoothing: antialiased; padding-bottom: 80px; }
+        h1, h2, .price-tag { font-family: 'Anton', sans-serif; letter-spacing: 1px; text-transform: uppercase; }
+        
+        /* Ефект світіння позаду кросівка */
+        .glow-bg {
+            position: absolute; width: 300px; height: 300px;
+            background: radial-gradient(circle, rgba(255,59,48,0.4) 0%, rgba(0,0,0,0) 70%);
+            top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 0;
+            filter: blur(40px); animation: pulse-glow 3s infinite;
+        }
+        @keyframes pulse-glow { 0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); } 50% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); } }
+
+        /* Кросівки */
+        .hero-img { filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5)); transform: rotate(-15deg); z-index: 10; position: relative; transition: all 0.5s; }
+        
+        /* Пульсація кнопки */
+        .btn-pulse { animation: shadow-pulse 1.5s infinite; }
+        @keyframes shadow-pulse { 0% { box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(255, 59, 48, 0); } 100% { box-shadow: 0 0 0 0 rgba(255, 59, 48, 0); } }
+
+        /* Скролбар галереї */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* Приховуємо кнопку, коли форма видима */
+        .hide-sticky { transform: translateY(150%); }
+    </style>
+
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        
+        // ЗАМІСТЬ XXXXXXXXXXXXXXX ВСТАВ СВІЙ ID ПІКСЕЛЯ
+        // fbq('init', 'XXXXXXXXXXXXXXX'); 
+        // fbq('track', 'PageView');
+    </script>
+    </head>
+<body>
+
+    <div class="bg-accent text-black text-xs font-bold text-center py-2 tracking-widest">
+        🔥 РОЗПРОДАЖ СКЛАДУ: -40% ДО 23:00
+    </div>
+
+    <section class="relative pt-8 pb-12 overflow-hidden">
+        <div class="container mx-auto px-4 text-center relative z-10">
+            
+            <div class="flex justify-center items-center gap-2 mb-4 opacity-70">
+                <span class="text-sm font-bold tracking-[0.3em]">ORIGINAL QUALITY</span>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl leading-none mb-2 relative z-20">
+                NIKE AIR<br><span class="text-accent">MAX PLUS TN</span>
+            </h1>
+
+            <div class="relative w-full max-w-md mx-auto h-[350px] flex items-center justify-center my-4" data-aos="zoom-in">
+                <div class="glow-bg"></div>
+                <img src="https://parspng.com/wp-content/uploads/2023/02/shoespng.parspng.com-11.png" alt="Nike TN" class="hero-img w-full">
+                
+                <div class="absolute top-0 right-4 bg-white text-black font-bold px-3 py-1 text-xs rounded-full transform rotate-12 z-20 shadow-lg">
+                    ХІТ ПРОДАЖІВ
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center gap-1 mb-8" data-aos="fade-up">
+                <div class="text-gray-500 line-through text-lg font-bold">4 800 грн</div>
+                <div class="text-6xl font-display text-white drop-shadow-md">2 990 <span class="text-2xl align-top">грн</span></div>
+                
+                <div class="flex items-center gap-2 mt-2 bg-card px-3 py-1 rounded-full border border-white/10">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    </span>
+                    <span class="text-xs text-gray-400">Зараз дивляться: <b class="text-white">14 людей</b></span>
+                </div>
+            </div>
+
+            <a href="#order-form" class="inline-block w-full max-w-sm bg-accent text-white font-display text-2xl py-4 rounded-xl shadow-[0_0_20px_rgba(255,59,48,0.5)] btn-pulse transition hover:scale-105">
+                ЗАБРАТИ ЗІ ЗНИЖКОЮ
+            </a>
+        </div>
+    </section>
+
+    <section class="py-8 border-t border-white/5 bg-card">
+        <div class="px-4 mb-4 flex justify-between items-end">
+            <h2 class="text-2xl">ЖИВІ ФОТО</h2>
+            <span class="text-xs text-gray-500">Гортай →</span>
+        </div>
+        
+        <div class="flex gap-4 overflow-x-auto px-4 pb-4 hide-scroll snap-x snap-mandatory">
+            <div class="min-w-[85%] md:min-w-[40%] h-[300px] rounded-2xl overflow-hidden relative snap-center border border-white/10">
+                <img src="https://images.unsplash.com/photo-1605348532760-6753d5c43329?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover">
+            </div>
+            <div class="min-w-[85%] md:min-w-[40%] h-[300px] rounded-2xl overflow-hidden relative snap-center border border-white/10">
+                <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover">
+            </div>
+            <div class="min-w-[85%] md:min-w-[40%] h-[300px] rounded-2xl overflow-hidden relative snap-center border border-white/10">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-4">
+        <h2 class="text-center text-3xl mb-2">РОЗМІРИ</h2>
+        <p class="text-center text-gray-500 text-sm mb-8">Не знаєш розмір? Оператор допоможе при дзвінку.</p>
+        
+        <div class="grid grid-cols-3 gap-3 max-w-md mx-auto">
+            <div class="bg-card border border-white/20 rounded-lg p-3 text-center hover:border-accent transition cursor-pointer">
+                <div class="font-bold text-lg">41</div>
+                <div class="text-xs text-gray-500">26 см</div>
+            </div>
+            <div class="bg-card border border-white/20 rounded-lg p-3 text-center hover:border-accent transition cursor-pointer">
+                <div class="font-bold text-lg">42</div>
+                <div class="text-xs text-gray-500">26.5 см</div>
+            </div>
+            <div class="bg-card border border-white/20 rounded-lg p-3 text-center hover:border-accent transition cursor-pointer">
+                <div class="font-bold text-lg">43</div>
+                <div class="text-xs text-gray-500">27.5 см</div>
+            </div>
+            <div class="bg-card border border-accent rounded-lg p-3 text-center relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-2 h-2 bg-accent rounded-bl"></div>
+                <div class="font-bold text-lg">44</div>
+                <div class="text-xs text-gray-500">28 см</div>
+            </div>
+            <div class="bg-card border border-white/20 rounded-lg p-3 text-center hover:border-accent transition cursor-pointer">
+                <div class="font-bold text-lg">45</div>
+                <div class="text-xs text-gray-500">29 см</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-8 px-4 bg-card border-y border-white/5">
+        <div class="grid grid-cols-1 gap-6 max-w-md mx-auto">
+            <div class="flex items-center gap-4" data-aos="fade-right">
+                <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-2xl">📦</div>
+                <div>
+                    <h3 class="font-bold">Оплата при отриманні</h3>
+                    <p class="text-xs text-gray-400">Жодних ризиків. Плати після примірки.</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4" data-aos="fade-right" data-aos-delay="100">
+                <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-2xl">🚀</div>
+                <div>
+                    <h3 class="font-bold">Швидка доставка</h3>
+                    <p class="text-xs text-gray-400">1-2 дні по Україні (Нова Пошта).</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4" data-aos="fade-right" data-aos-delay="200">
+                <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-2xl">💎</div>
+                <div>
+                    <h3 class="font-bold">Топ якість</h3>
+                    <p class="text-xs text-gray-400">Оригінальні матеріали та коробка.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order-form" class="py-16 px-4 relative">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[500px] bg-accent/10 blur-[100px] -z-10 rounded-full pointer-events-none"></div>
+
+        <div class="max-w-md mx-auto bg-card border border-white/10 p-6 rounded-3xl shadow-2xl relative overflow-hidden">
+            <div class="text-center mb-6">
+                <p class="text-gray-400 text-xs font-bold tracking-widest mb-2">ПРОПОЗИЦІЯ ЗАКІНЧУЄТЬСЯ ЧЕРЕЗ:</p>
+                <div class="flex justify-center gap-2 font-display text-3xl" id="timer">
+                    <div class="bg-white/10 p-2 rounded w-12">04</div>:
+                    <div class="bg-white/10 p-2 rounded w-12">59</div>:
+                    <div class="bg-white/10 p-2 rounded w-12 text-accent">32</div>
+                </div>
+            </div>
+
+            <form id="lead-form" class="space-y-4">
+                <div class="space-y-1">
+                    <label class="text-xs font-bold text-gray-500 ml-2">ВАШЕ ІМ'Я</label>
+                    <input type="text" name="name" required placeholder="Іван" 
+                           class="w-full bg-black border border-white/20 rounded-xl p-4 text-white focus:border-accent focus:outline-none transition">
+                </div>
+                <div class="space-y-1">
+                    <label class="text-xs font-bold text-gray-500 ml-2">ТЕЛЕФОН</label>
+                    <input type="tel" name="phone" required placeholder="+38 (0__) ___-__-__" 
+                           class="w-full bg-black border border-white/20 rounded-xl p-4 text-white focus:border-accent focus:outline-none transition">
+                </div>
+                
+                <input type="hidden" name="model" value="Nike Air Max Plus TN Black/Red">
+
+                <button type="submit" class="w-full bg-accent text-white font-display text-2xl py-5 rounded-xl shadow-lg mt-4 btn-pulse hover:bg-white hover:text-black transition duration-300">
+                    ОФОРМИТИ ЗАМОВЛЕННЯ
+                </button>
+                
+                <p class="text-center text-[10px] text-gray-600 mt-3">
+                    Натискаючи кнопку, ви даєте згоду на обробку персональних даних.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <div class="fixed bottom-4 left-4 right-4 z-50 md:hidden transition-all duration-500 transform translate-y-0" id="sticky-btn">
+        <a href="#order-form" class="flex items-center justify-between bg-white text-black px-6 py-3 rounded-xl shadow-2xl border-2 border-accent">
+            <span class="font-display text-xl">КУПИТИ</span>
+            <span class="font-bold text-sm bg-accent text-white px-2 py-1 rounded">2 990 грн</span>
+        </a>
+    </div>
+
+    <div id="thank-you-modal" class="fixed inset-0 bg-black/90 z-[100] hidden items-center justify-center px-4 backdrop-blur-sm">
+        <div class="bg-card border border-white/10 p-8 rounded-3xl text-center max-w-sm">
+            <div class="text-6xl mb-4">✅</div>
+            <h2 class="text-3xl text-white mb-2">ДЯКУЄМО!</h2>
+            <p class="text-gray-400 mb-6">Ваше замовлення прийнято. Менеджер зв'яжеться з вами протягом 15 хвилин.</p>
+            <button onclick="closeModal()" class="w-full bg-white/10 text-white py-3 rounded-xl font-bold hover:bg-white/20">ОК</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // 1. Таймер зворотного відліку
+        function startTimer(duration, display) {
+            var timer = duration, hours, minutes, seconds;
+            setInterval(function () {
+                hours = parseInt(timer / 3600, 10);
+                minutes = parseInt((timer % 3600) / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                const divs = document.querySelectorAll('#timer div');
+                divs[0].textContent = hours;
+                divs[1].textContent = minutes;
+                divs[2].textContent = seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+        startTimer(18000, document.querySelector('#timer')); // 5 годин
+
+        // 2. Обробка форми та ПІКСЕЛЬ FB
+        const form = document.getElementById('lead-form');
+        const modal = document.getElementById('thank-you-modal');
+        const stickyBtn = document.getElementById('sticky-btn');
+        const orderSection = document.getElementById('order-form');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Кнопка завантаження
+            const btn = form.querySelector('button');
+            const originalText = btn.textContent;
+            btn.textContent = 'ВІДПРАВКА...';
+            btn.disabled = true;
+
+            // Імітація відправки
+            setTimeout(() => {
+                // ==========================================
+                // 2. ПОДІЯ ПІКСЕЛЯ "ПОКУПКА" (Purchase)
+                // ==========================================
+                if(typeof fbq !== 'undefined') {
+                    fbq('track', 'Purchase', {
+                        value: 2990.00,
+                        currency: 'UAH',
+                        content_name: 'Nike Air Max Plus TN'
+                    });
+                }
+                // ==========================================
+
+                // Показати модальне вікно
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                
+                // Скидання форми
+                form.reset();
+                btn.textContent = originalText;
+                btn.disabled = false;
+            }, 1000);
+        });
+
+        function closeModal() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // Приховування стікі кнопки, якщо ми доскролили до форми
+        window.addEventListener('scroll', () => {
+            const formRect = orderSection.getBoundingClientRect();
+            if(formRect.top < window.innerHeight && formRect.bottom >= 0) {
+                stickyBtn.classList.add('hide-sticky'); // Сховати
+            } else {
+                stickyBtn.classList.remove('hide-sticky'); // Показати
+            }
+        });
+    </script>
+</body>
+</html>
