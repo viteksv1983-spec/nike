@@ -47,10 +47,6 @@
         .btn-pulse { animation: shadow-pulse 1.5s infinite; }
         @keyframes shadow-pulse { 0% { box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(255, 59, 48, 0); } 100% { box-shadow: 0 0 0 0 rgba(255, 59, 48, 0); } }
 
-        /* Скролбар галереї */
-        .hide-scroll::-webkit-scrollbar { display: none; }
-        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
-        
         .hide-sticky { transform: translateY(150%); }
     </style>
 
@@ -116,20 +112,19 @@
     </section>
 
     <section class="py-8 border-t border-white/5 bg-card">
-        <div class="px-4 mb-4 flex justify-between items-end">
+        <div class="px-4 mb-6 text-center">
             <h2 class="text-2xl">ЖИВІ ФОТО</h2>
-            <span class="text-xs text-gray-500">Гортай вбік →</span>
         </div>
         
-        <div class="flex gap-4 overflow-x-auto px-4 pb-4 hide-scroll snap-x snap-mandatory">
-            <div class="min-w-[90%] md:min-w-[45%] aspect-video rounded-2xl overflow-hidden relative snap-center border border-white/10 shadow-lg">
-                <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover">
+        <div class="flex flex-col gap-6 px-4">
+            <div class="w-full rounded-2xl overflow-hidden border border-white/10 shadow-lg" data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?q=80&w=1000&auto=format&fit=crop" class="w-full h-auto object-cover">
             </div>
-            <div class="min-w-[90%] md:min-w-[45%] aspect-video rounded-2xl overflow-hidden relative snap-center border border-white/10 shadow-lg">
-                <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover">
+            <div class="w-full rounded-2xl overflow-hidden border border-white/10 shadow-lg" data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?q=80&w=1000&auto=format&fit=crop" class="w-full h-auto object-cover">
             </div>
-            <div class="min-w-[90%] md:min-w-[45%] aspect-video rounded-2xl overflow-hidden relative snap-center border border-white/10 shadow-lg">
-                <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover">
+            <div class="w-full rounded-2xl overflow-hidden border border-white/10 shadow-lg" data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1617612980232-47e337317237?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover">
             </div>
         </div>
     </section>
@@ -151,7 +146,7 @@
                 </div>
                 <p class="text-gray-300 text-sm">Кроси топ, оригінал 100%. Відправили в день замовлення, на пошті все перевірив. Розмір підійшов ідеально.</p>
                 <div class="mt-3 flex gap-2">
-                     <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?w=100&h=100&fit=crop" class="w-16 h-16 rounded-lg object-cover opacity-80">
+                     <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=100&h=100&fit=crop" class="w-16 h-16 rounded-lg object-cover opacity-80">
                 </div>
             </div>
 
@@ -359,4 +354,3 @@
     </script>
 </body>
 </html>
-
